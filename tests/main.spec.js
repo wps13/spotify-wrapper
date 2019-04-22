@@ -1,13 +1,11 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-undef */
 import chai, { expect } from "chai";
 
 import sinon from "sinon";
 import sinonChai from "sinon-chai";
 import sinonStubPromise from "sinon-stub-promise";
-
-chai.use(sinonChai);
-sinonStubPromise(sinon);
-
-global.fetch = require("node-fetch");
 
 import {
   search,
@@ -16,9 +14,14 @@ import {
   searchPlaylists
 } from "../src/main";
 
+chai.use(sinonChai);
+sinonStubPromise(sinon);
+
+global.fetch = require("node-fetch");
+
 describe("Spotify wrapper", () => {
   describe("smoke tests", () => {
-    //search
+    // search
     // searchArtists
     // searchTracks
     // searchPlaylists
