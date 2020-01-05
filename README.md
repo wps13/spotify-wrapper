@@ -1,5 +1,7 @@
 # Spotify wrapper
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wps13/spotify-wrapper.svg)](https://greenkeeper.io/)
+
 Wrapper to work with [Spotify API](https://api.spotify.com)
 
 ## Getting Started
